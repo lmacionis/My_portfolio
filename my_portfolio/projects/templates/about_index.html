@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<html lang="en">
+  <head>
+      <style>
+        .my-4 {
+            text-align: center;
+        }
+        .img-fluid {
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .col {
+            display: block;
+            padding: 1rem;
+            word-break: break-all
+          }
+        .my-3 {
+            text-align: center;
+        }
+        @media (min-width: 48em) {
+            .img-fluid {
+                width: 40%;
+                padding-right: 20px;
+            }
+            .description {
+                padding-left: 10px;
+            }
+        }
+
+      </style>
+
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Lukas Portfolio | About</title>
+    </head>
+    <body>
+<!-- Portfolio Item Heading -->
+        <h1 class="my-4">Lukas Laimis Mačionis</h1>
+<!-- Portfolio Item Row -->
+  <div class="row">
+
+    <div class="col">
+        <div>
+            <img class="img-fluid" src="{% static 'img/project1.png' %}" alt="" align="left">
+        </div>
+        <div>
+            <h3 class="my-3">{{ about.title }}</h3>
+            <p class="description">{{ about.description }}</p>
+        </div>
+    </div>
+
+  </div>
+</body>
+{% endblock %}

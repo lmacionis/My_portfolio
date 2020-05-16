@@ -1,0 +1,100 @@
+{% load static %}
+{% block page_content %}
+<html lang="en">
+  <head>
+      <style>
+        #home_img {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: fixed;
+        }
+        .cover-container {
+            max-width: 42em;
+        }
+        .masthead-brand {
+            margin-bottom: 0;
+        }
+        .inner1 {
+            color: black;
+        }
+        .nav-masthead .nav-link {
+            padding: .25rem 0;
+            font-weight: 700;
+            color: black;
+            background-color: transparent;
+            border-bottom: .25rem solid transparent;
+        }
+        .nav-masthead .nav-link:hover,
+            .nav-masthead .nav-link:focus {
+            border-bottom-color: black;
+        }
+        .nav-masthead .nav-link + .nav-link {
+            margin-left: 1rem;
+        }
+        .inner {
+            color: black;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        .cover {
+            font-size: 4rem;
+        }
+        .name {
+
+        }
+        @media (min-width: 48em) {
+            .masthead-brand {
+                float: left;
+            }
+            .nav-masthead {
+                float: right;
+            }
+        }
+        .cover {
+            padding: 0 1.5rem;
+        }
+      </style>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+    <link href="./css/cover.css" rel="stylesheet">
+
+    <title>Lukas Portfolio | Home</title>
+    </head>
+    <body class="text-center" id="home_img" style="background-image: url('{% static 'img/cover3.jpg' %}')">
+
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+                <div class="inner1">
+                    <h3 class="masthead-brand">Lukas Mačionis</h3>
+                    <nav class="nav nav-masthead justify-content-center">
+                        <a class="nav-link" href="{% url 'project_index' %}">Projects</a>
+                        <a class="nav-link" href="{% url 'about_index' %}">About</a>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="inner">
+                <h1 class="cover">Hi I'm <strong class="name">Lukas</strong></h1>
+                <p>Web developer, python programmer</p>
+            </main>
+
+            <footer class="mastfoot mt-auto">
+            </footer>
+        </div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+{% endblock %}

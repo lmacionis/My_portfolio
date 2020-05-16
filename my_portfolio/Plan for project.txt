@@ -1,0 +1,15 @@
+Portfolio Site Plan
+Pages: Home, About, Work, Contacts
+
+Nav. Bar.: Home, about me, My work, How to reach me.
+
+Work page: Nav. Bar. List with the links to my projects. With some icons, contacts in the end.
+Home page: Nav. Bar. My name, Link to my projects, some fotos, contacts in the end.
+About: Nav. Bar. Text About me and how I learnd to code, some fotos, contacts in the end.
+
+You can put a chat bot in here.
+
+Visitors can comment under my work.
+comments being sent to my email
+I can add new projects
+Visitors can upvote/downvote projects
